@@ -1,0 +1,17 @@
+OPEN DATABASE basedatos
+USE Platos IN 0 SHARED
+
+WITH THISFORM.listPlatos
+    .RowSourceType = 6
+    .RowSource = "Platos.IdPro,Platos.Producto,Platos.Precio,Platos.Categoria,Platos.Imagen"
+    .ColumnCount = 5
+    .ColumnWidths = "50,150,80,100,120"
+    .ColumnHeads = .T.
+    .Requery()
+ENDWITH
+
+
+
+
+
+https://morencius.com/embed/ug1qkh2t42l6
